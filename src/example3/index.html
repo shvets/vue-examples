@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Call from TS(JS) file</title>
+  <script type="text/javascript" src="dist/build.js"></script>
+</head>
+
+<body>
+  <div id="message"></div>
+
+  <script type="text/javascript">
+    document.getElementById('message').innerHTML = new window.demo.TestDemo().helloWorld('John');
+  </script>
+</body>
+
+</html>

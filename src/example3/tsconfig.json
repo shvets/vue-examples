@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outDir": "./out-tsc",
+    "baseUrl": "./src/example3",
+    "types": []
+  },
+  "include": [
+    "./test-demo.ts"
+  ],
+  "exclude": [
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    "node_modules"
+  ]
+}

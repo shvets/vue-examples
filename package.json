@@ -1,0 +1,28 @@
+{
+  "name": "vue-examples",
+  "version": "1.0.0",
+  "description": "Vue examples",
+  "licence": "MIT",
+  "scripts": {
+    "ex1": "open src/example1/index.html",
+
+    "ex2": "serve src/example2",
+
+    "ex3:tsc": "tsc --project src/example3/tsconfig.json",
+    "ex3:webpack": "webpack --config src/example3/webpack",
+    "ex3": "serve src/example3",
+
+    "ex4:tsc": "tsc --project src/example4/tsconfig.json",
+    "ex4": "serve src/example4"
+  },
+  "dependencies": {
+    "vue": "^2.5.13"
+  },
+  "devDependencies": {
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.9",
+    "typescript": "^2.7.2",
+    "ts-loader": "^4.0.0",
+    "serve": "^6.5.0"
+  }
+}

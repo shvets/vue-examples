@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Call function from webpack bundle with SystemJS (without webpack)</title>
+  <script src="https://unpkg.com/systemjs"></script>
+</head>
+
+<body>
+
+<div id="message"></div>
+
+<script type="text/javascript">
+  System.config({
+    map: {
+      "vue": "https://unpkg.com/vue"
+    }
+  });
+
+  SystemJS.import('dist/build.js').then(function (m) {
+    SystemJS.import('test-demo').then((module) => {
+      document.getElementById('message').innerHTML = new module.TestDemo().helloWorld('John');
+    });
+  });
+</script>
+</body>
+
+</html>
