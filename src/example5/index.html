@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Bulma & X-template exampe</title>
+  <script src="https://unpkg.com/vue"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css">
+
+  <script type="module" src="app.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <demo></demo>
+  </div>
+
+  <script type="text/x-template" id="child">
+    <div>
+      <section class="hero is-primary">
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h2 class="title">Check out recent surveys</h2>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="card" v-for="(survey, index) in surveys" v-bind:key="survey.id">
+            <div class="card-content">
+              <p class="title">{{index+1}}. {{ survey.name}}</p>
+              <p class='subtitle'>{{ survey.created_at.toDateString() }}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </script>
+
+</body>
