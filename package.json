@@ -15,7 +15,9 @@
     "ex4:tsc": "tsc --project src/example4/tsconfig.json",
     "ex4": "serve src/example4",
 
-    "ex5": "serve src/example5"
+    "ex5": "serve src/example5",
+
+    "ex6": "serve src/example6"
   },
   "dependencies": {
     "vue": "^2.5.13"
